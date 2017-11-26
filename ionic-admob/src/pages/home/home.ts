@@ -11,7 +11,7 @@ export class HomePage {
 
   
   constructor(public navCtrl: NavController 
-    , public admob: AdMobFree
+    // , public admob: AdMobFree //usman
   ) {
 
   }
@@ -26,11 +26,11 @@ export class HomePage {
                id: 'ca-app-pub-9604915415648306/7098266830'
            };
     
-           this.admob.banner.config(bannerConfig);
+        //    this.admob.banner.config(bannerConfig);
     
-            this.admob.banner.prepare().then(() => {
-               // success
-            }).catch(e => console.log(e));
+        //     this.admob.banner.prepare().then(() => {     //usman all lines
+        //        // success
+        //     }).catch(e => console.log(e));
     
        }
 
@@ -43,30 +43,30 @@ export class HomePage {
                  id: 'ca-app-pub-9604915415648306/7098266830'
              };
       
-             this.admob.interstitial.config(interstitialConfig);
+            //  this.admob.interstitial.config(interstitialConfig);
       
-             this.admob.interstitial.prepare().then(() => {
-                 // success
-             })
-             .catch(e => console.log(e));
+            //  this.admob.interstitial.prepare().then(() => {                  //usman all lines
+            //      // success
+            //  })
+            //  .catch(e => console.log(e));
             }
 
 
 
-            showRewardVideoAds(){
-              const bannerConfig: AdMobFreeBannerConfig = {
-              id: 'ca-app-pub-9604915415648306/7098266830',
-              isTesting: false,
-              autoShow: false
-              };
-              this.admob.rewardVideo.config(bannerConfig);
+            // showRewardVideoAds(){
+            //   const bannerConfig: AdMobFreeBannerConfig = {
+            //   id: 'ca-app-pub-9604915415648306/7098266830',
+            //   isTesting: false,
+            //   autoShow: false
+            //   };
+            //   this.admob.rewardVideo.config(bannerConfig);
           
-              this.admob.rewardVideo.prepare()
-              .then(() => {
-                  this.admob.rewardVideo.show()
-              })
-              .catch(e => console.log(e));    
-              }
+            //   this.admob.rewardVideo.prepare()
+            //   .then(() => {
+            //       this.admob.rewardVideo.show()
+            //   })
+            //   .catch(e => console.log(e));    
+            //   }
 
 
               // loadAd(){
