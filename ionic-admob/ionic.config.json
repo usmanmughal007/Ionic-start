@@ -1,0 +1,8 @@
+{
+  "name": "ionic-admob",
+  "app_id": "6f16c748",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
